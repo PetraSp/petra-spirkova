@@ -11,6 +11,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     }
   `)
 
+
   if(result.errors) {
     reporter.panic('failed to create posts', result.errors)
   }
@@ -22,7 +23,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       path: post.frontmatter.slug,
       component: require.resolve('./src/templates/post.js'),
       context: {
-        slug: `/${post.formatter.slug}/`
+        slug: post.frontmatter.slug
     }
     });
   })
