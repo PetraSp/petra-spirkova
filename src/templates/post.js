@@ -22,7 +22,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
     <p style={{fontSize: '0.75rem'}}>Posted by {post.frontmatter.author}</p>
     {/*<pre>{JSON.stringify(pageContext, null, 2)}</pre>*/}
     <MDXRenderer>{post.body}</MDXRenderer>
-    <ReadLink to="/">&larr; back to all posts </ReadLink>
+    <ReadLink to="/blog">&larr; back to all posts </ReadLink>
   </Layout>
 )
 

@@ -6,7 +6,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/petraspirkova/petra-spirkova/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[],"defaultLayouts":{"default":"/Users/petraspirkova/petra-spirkova/src/components/Layout/index.js"}},
+      options: {"plugins":[],"defaultLayouts":{"default":"/Users/petraspirkova/petra-spirkova/src/components/Layout/index.js"},"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images"}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

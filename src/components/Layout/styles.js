@@ -9,9 +9,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* More info: https://bit.ly/2PsCnzk */
-  * + * {
-      margin-top: 1rem;
-  }
+  // * + * {
+  //     margin-top: 1rem;
+  // }
 
   html,
   body {
@@ -28,12 +28,12 @@ const GlobalStyle = createGlobalStyle`
       'Segoe UI Symbol';
       font-size: 18px;
       line-height: 1.4;
-  }
   
   /* remove margin for the main div that Gatsby mounts into */
 
-  > div {
-      margin-top: 0;
+      > div {
+          margin-top: 0;
+      }
   }
 
   h1,
@@ -44,10 +44,10 @@ const GlobalStyle = createGlobalStyle`
   h6 {
       color: #222;
       line-height: 1.1;
-  }
   
-  + * {
-      margin-top: 0.5rem;
+      + * {
+          margin-top: 0.5rem;
+      }
   }
   
   strong {
@@ -65,6 +65,8 @@ const MainContent = Styled.main`
   // margin-right: auto;
   max-width: 90vw;
   width: 550px;
+  //margin: 2rem auto;
+  //max-width: 550px;
 `;
 
 export default GlobalStyle;

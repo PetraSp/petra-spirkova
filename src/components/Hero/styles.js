@@ -1,12 +1,14 @@
 import Styled from 'styled-components';
+import BackgroundImage from "gatsby-background-image";
 
-const ImageBackground = Styled.div`
-  background-image: url('/images/marko-blazevic-mn.jpg');
+const ImageBackground = Styled(BackgroundImage)`
+  // background-image: url('/images/marko-blazevic-mn.jpg');
   background-position: top 20% center;
   background-size: cover;
   height: 50vh;
-  
-  + * {
+ 
+ /* override the default margin for sibling elements  */
+  + * { 
     margin-top: 0;
   }
 `;
