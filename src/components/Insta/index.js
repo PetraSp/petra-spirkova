@@ -7,7 +7,7 @@ const Insta = () => {
   const { username } = instaPhotos[0];
   return (
     <>
-      <h2>Instagram posts from @petraspirk</h2>
+      <h2>My Instagram</h2>
       <InstaWrapper>
         {instaPhotos.map(photo =>
           <InstaLink key={photo.id} href={`https://instagram.com/p/${photo.id}/`}>

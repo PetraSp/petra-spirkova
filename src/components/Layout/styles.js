@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 import { createGlobalStyle } from "styled-components"
-import background from "../../../static/images/sunflower.jpg"
+// import background from "../../../static/images/sunflower.jpg"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   body {
       margin: 0;
       color: #555;
-      background: url(${background}) no-repeat center center fixed;
+      background: ${props => (props.whiteColor ? 'black' : '#EFC7B7')};
       background-size: cover;
       height: 100%;
       overflow: hidden;
@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const MainContent = Styled.main`
-  margin: 2rem auto 4rem;
+  margin: 2rem auto 5rem;
   // margin-left: auto;
   // margin-right: auto;
   max-width: 90vw;

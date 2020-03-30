@@ -19,7 +19,7 @@ const PageHeader = Styled.header`
     align-items: flex-end;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
+    padding: 1rem calc((100vw - 550px - 0.5rem) / 2);
   }
 `;
 
@@ -32,7 +32,7 @@ const NavLink = Styled(Link)`
   // color: #c32aa3;
   color: #AC3B61;
   font-family: Brandon Grotesque Regular Italic;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: ${props => props.fontWeight || 900 };
   line-height: 1;
   margin: 0 0.5rem 0 0;
